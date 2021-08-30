@@ -1,0 +1,50 @@
+One Mind for Snes9x  - by xLorkin
+
+Dieses Programm ist dem One Mind-Prinzip des SMW Hacks 'Super Mario World - One Mind' nachempfunden.
+Dabei wird in einem zufälligen Zeitraum die Steuerung zwischen Spieler 1 und Spieler 2 gewechselt.
+Dafür wird die in Snes9x integrierte Funktion 'Joypad swap' benutzt.
+
+Über die zwei Schieberegler lassen sich die Zeiten einstellen 
+wie schnell die Steuerung zwischen den beiden Spieler gewechselt werden soll.
+Über einen Zufallsgenerator wird eine Zeit zwischen min und max ermittelt 
+und nach Ablauf dieser Zeit wird die Steuerung gewechselt.
+Zeit in Millisekunden (1000 ms = 1 Sekunde).
+
+
+
+How to:
+
+1. Starte Snes9x.
+2. Konfiguriere die Controller-inputs für Spieler 1 und Spieler 2. (Input -> Input Configuration)
+3. Lade das gewünschte Spiel.
+4. Starte One Mind for Snes9x.exe.
+5. Mithilfe der Schieberegler die gewünschte Geschwindigkeit einstellen.
+5. Klicke bei One Mind for Snes9x.exe auf Start.
+
+Zum beenden einfach auf Stop klicken und/oder das Programm schließen.
+
+Wenn euch die Meldung bei einem Joypad-swap stört, dann könnt ihr alle Meldungen in Snes9x ausblenden.
+Dafür öffnet ihr die snes9x.conf mit einem Editor (Notepad) und ändert folgende Zeile:
+MessageDisplayTime        = 120    # display length of messages, in frames. set to 0 to disable all message text
+zu
+MessageDisplayTime        = 0    # display length of messages, in frames. set to 0 to disable all message text
+
+
+Troubleshooting:
+Sollte es nicht funktionieren kontrolliere bitte folgendes:
+- Geht bei Snes9x auf Input -> Customize Hotkeys.
+	- Es öffnet sich ein Fenster. Wechsel links oben auf Page 2.
+	- Stelle sicher dass bei 'Joypad swap' der Button '6' konfiguriert ist.
+- Startet das Programm als Administrator (Rechtsklick -> Als Administrator starten)
+
+
+
+
+Getestet wurde das Programm unter Windows 10 mit Snes9x 1.60.
+
+Mögliche Features für die Zukunft:
+- Lautstärkeregler für die Sounds.
+- Möglichkeit direkt aus dem Programm Snes9x zu starten.
+
+
+

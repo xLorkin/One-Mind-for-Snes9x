@@ -1,0 +1,53 @@
+One Mind for Snes9x - by xLorkin
+
+This program is based on the One Mind principle of the SMW Hack 'Super Mario World - One Mind'.
+It switches the control between player 1 and player 2 in a random period of time.
+For this, the Snes9x integrated function 'Joypad swap' is used.
+
+With the two sliders you can set the times 
+how fast the control should be swapped between the two players.
+A random generator determines a time between min and max. 
+and after this time the control is changed.
+Time in milliseconds (1000 ms = 1 second).
+
+
+
+How to:
+
+1. start Snes9x.
+2. configure the controller-inputs for player 1 and player 2 (Input -> Input Configuration).
+3. load the desired game.
+4. start One Mind for Snes9x.exe.
+Use the sliders to set the desired speed. 5.
+Click Start on One Mind for Snes9x.exe.
+
+To quit, click Stop and/or close the program.
+
+If you don't like the joypad swap message, you can hide all messages in Snes9x.
+To do this open the snes9x.conf with an editor (Notepad) and change the following line:
+MessageDisplayTime = 120 # display length of messages, in frames. set to 0 to disable all message text
+to
+MessageDisplayTime = 0 # display length of messages, in frames. set to 0 to disable all message text
+
+
+Troubleshooting:
+If it does not work please check the following:
+- On Snes9x go to Input -> Customize Hotkeys.
+	- A window opens. Change to Page 2 in the upper left corner.
+	- Make sure that the button '6' is configured for 'Joypad swap'.
+- Start the program as administrator (right click -> Start as administrator).
+
+
+
+
+The program was tested under Windows 10 with Snes9x 1.60.
+
+Possible features for the future:
+- Volume control for the sounds.
+- Possibility to start Snes9x directly from the program.
+
+
+
+
+
+Translated with www.DeepL.com/Translator (free version)
